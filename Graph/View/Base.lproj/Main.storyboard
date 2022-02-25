@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z5i-bh-5qd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BarGraph-->
+        <scene sceneID="zjb-U9-Wra">
+            <objects>
+                <viewController id="iaK-zG-jjS" customClass="BarViewController" customModule="Graph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jJG-qr-vrA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpI-h6-c01" customClass="BasicBarChart" customModule="Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="po3-ld-zdC" customClass="HorizontalGraph" customModule="Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="492" width="414" height="321"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EIj-lA-88c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dpI-h6-c01" firstAttribute="top" secondItem="EIj-lA-88c" secondAttribute="top" id="BOL-Ic-QY5"/>
+                            <constraint firstItem="EIj-lA-88c" firstAttribute="bottom" secondItem="po3-ld-zdC" secondAttribute="bottom" id="Gsa-Uy-UEU"/>
+                            <constraint firstItem="dpI-h6-c01" firstAttribute="height" secondItem="jJG-qr-vrA" secondAttribute="height" multiplier="0.5" id="SXA-zP-SEf"/>
+                            <constraint firstItem="EIj-lA-88c" firstAttribute="trailing" secondItem="dpI-h6-c01" secondAttribute="trailing" id="cng-cO-49m"/>
+                            <constraint firstItem="po3-ld-zdC" firstAttribute="top" secondItem="dpI-h6-c01" secondAttribute="bottom" id="dff-4n-9ZL"/>
+                            <constraint firstItem="EIj-lA-88c" firstAttribute="trailing" secondItem="po3-ld-zdC" secondAttribute="trailing" id="kUm-Oy-b5r"/>
+                            <constraint firstItem="dpI-h6-c01" firstAttribute="leading" secondItem="EIj-lA-88c" secondAttribute="leading" id="q7e-c7-Sci"/>
+                            <constraint firstItem="po3-ld-zdC" firstAttribute="leading" secondItem="EIj-lA-88c" secondAttribute="leading" id="rii-8p-8Me"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="BarGraph" image="chart.bar" catalog="system" id="1od-WG-lVz"/>
+                    <connections>
+                        <outlet property="barChart" destination="dpI-h6-c01" id="cD1-1u-ppQ"/>
+                        <outlet property="horizonBar" destination="po3-ld-zdC" id="neg-RS-Tmj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Zk-Sb-r9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1014" y="392"/>
+        </scene>
+        <!--Line&Bar-->
+        <scene sceneID="Jzi-Lb-aMa">
+            <objects>
+                <viewController id="84z-4I-Ugh" customClass="LineAndPointViewController" customModule="Graph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JHL-qA-rmX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DNF-P6-3wF" customClass="LineChart" customModule="Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-ZN-ivb" customClass="PointChart" customModule="Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="492" width="414" height="321"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="840-I0-MJm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="840-I0-MJm" firstAttribute="bottom" secondItem="fIT-ZN-ivb" secondAttribute="bottom" id="LrB-hJ-2DF"/>
+                            <constraint firstItem="fIT-ZN-ivb" firstAttribute="top" secondItem="DNF-P6-3wF" secondAttribute="bottom" id="Qjk-Uj-azT"/>
+                            <constraint firstItem="DNF-P6-3wF" firstAttribute="top" secondItem="840-I0-MJm" secondAttribute="top" id="SAg-JQ-Eh5"/>
+                            <constraint firstItem="fIT-ZN-ivb" firstAttribute="leading" secondItem="840-I0-MJm" secondAttribute="leading" id="WEN-lu-wj8"/>
+                            <constraint firstItem="DNF-P6-3wF" firstAttribute="height" secondItem="JHL-qA-rmX" secondAttribute="height" multiplier="0.5" id="iPG-zi-Ibz"/>
+                            <constraint firstItem="840-I0-MJm" firstAttribute="trailing" secondItem="fIT-ZN-ivb" secondAttribute="trailing" id="jt0-nk-LTJ"/>
+                            <constraint firstItem="DNF-P6-3wF" firstAttribute="leading" secondItem="840-I0-MJm" secondAttribute="leading" id="tAK-Ft-9lu"/>
+                            <constraint firstItem="840-I0-MJm" firstAttribute="trailing" secondItem="DNF-P6-3wF" secondAttribute="trailing" id="w6Z-mB-Yzb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Line&amp;Bar" image="chart.xyaxis.line" catalog="system" id="R9R-zT-4FK"/>
+                    <connections>
+                        <outlet property="lineChart" destination="DNF-P6-3wF" id="hWr-x0-h7g"/>
+                        <outlet property="pointChart" destination="fIT-ZN-ivb" id="BME-Uq-hm7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63Q-YN-H6b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-986" y="-268"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9Vk-or-96w">
+            <objects>
+                <tabBarController id="z5i-bh-5qd" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rzS-sd-m1I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="84z-4I-Ugh" kind="relationship" relationship="viewControllers" id="6Vq-fM-5Tu"/>
+                        <segue destination="iaK-zG-jjS" kind="relationship" relationship="viewControllers" id="xAQ-d1-xTJ"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="04c-ph-Sze"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWA-Jl-2uZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1903" y="89"/>
+        </scene>
+        <!--radar&Pie-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="RadarCircleViewController" customModule="Graph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Uj-t8-83J" customClass="RadarChart" customModule="Graph" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="448"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B77-ni-ycd">
+                                        <rect key="frame" x="324" y="397" width="70" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="refresh"/>
+                                        <connections>
+                                            <action selector="refreshAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IuQ-7D-Gfr"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="B77-ni-ycd" secondAttribute="trailing" constant="20" id="S5D-pb-z5z"/>
+                                    <constraint firstAttribute="bottom" secondItem="B77-ni-ycd" secondAttribute="bottom" constant="20" id="jQr-n7-1B0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jow-NT-qWx" customClass="CirclePieIndicatorView" customModule="Graph" customModuleProvider="target">
+                                <rect key="frame" x="46.5" y="492" width="321" height="321"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jow-NT-qWx" secondAttribute="height" id="hYz-E1-yhw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Uj-t8-83J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2lk-FU-tQb"/>
+                            <constraint firstItem="7Uj-t8-83J" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="4lz-p7-bg7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jow-NT-qWx" secondAttribute="bottom" id="Hzq-ah-tav"/>
+                            <constraint firstItem="jow-NT-qWx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T0j-Q0-x4o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Uj-t8-83J" secondAttribute="trailing" id="geB-Rp-idD"/>
+                            <constraint firstItem="jow-NT-qWx" firstAttribute="top" secondItem="7Uj-t8-83J" secondAttribute="bottom" id="jhf-0w-H48"/>
+                            <constraint firstItem="7Uj-t8-83J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sEy-sy-sL3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="radar&amp;Pie" image="chart.pie" catalog="system" id="hW8-6E-tqp"/>
+                    <connections>
+                        <outlet property="circlePieIndicatorView" destination="jow-NT-qWx" id="Qcy-s9-8Mp"/>
+                        <outlet property="polygon" destination="7Uj-t8-83J" id="D5g-wg-kJ9"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1014" y="1067"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chart.bar" catalog="system" width="128" height="90"/>
+        <image name="chart.pie" catalog="system" width="128" height="121"/>
+        <image name="chart.xyaxis.line" catalog="system" width="128" height="101"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

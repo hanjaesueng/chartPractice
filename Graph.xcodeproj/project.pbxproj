@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		385A15AC27C85FA5003536E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15AB27C85FA5003536E3 /* AppDelegate.swift */; };
 		385A15AE27C85FA5003536E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15AD27C85FA5003536E3 /* SceneDelegate.swift */; };
-		385A15B027C85FA5003536E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15AF27C85FA5003536E3 /* ViewController.swift */; };
+		385A15B027C85FA5003536E3 /* RadarCircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15AF27C85FA5003536E3 /* RadarCircleViewController.swift */; };
 		385A15B327C85FA5003536E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385A15B127C85FA5003536E3 /* Main.storyboard */; };
 		385A15B527C85FA8003536E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385A15B427C85FA8003536E3 /* Assets.xcassets */; };
 		385A15B827C85FA8003536E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385A15B627C85FA8003536E3 /* LaunchScreen.storyboard */; };
+		385A15C427C86054003536E3 /* BarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15C327C86054003536E3 /* BarEntry.swift */; };
+		385A15C827C860E3003536E3 /* CirclePieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15C727C860E3003536E3 /* CirclePieView.swift */; };
+		385A15CA27C860FA003536E3 /* CirclePieIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 385A15C927C860FA003536E3 /* CirclePieIndicatorView.xib */; };
+		385A15CC27C86127003536E3 /* CirclePieIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15CB27C86127003536E3 /* CirclePieIndicatorView.swift */; };
+		385A15D327C86203003536E3 /* HorizontalGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15CE27C86202003536E3 /* HorizontalGraph.swift */; };
+		385A15D427C86203003536E3 /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15CF27C86202003536E3 /* BasicBarChart.swift */; };
+		385A15D527C86203003536E3 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15D027C86202003536E3 /* LineChart.swift */; };
+		385A15D627C86203003536E3 /* PointChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15D127C86202003536E3 /* PointChart.swift */; };
+		385A15DA27C86215003536E3 /* RadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15D927C86215003536E3 /* RadarChart.swift */; };
+		385A15DC27C8778C003536E3 /* LineAndPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15DB27C8778C003536E3 /* LineAndPointViewController.swift */; };
+		385A15DE27C88404003536E3 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A15DD27C88404003536E3 /* BarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		385A15A827C85FA5003536E3 /* Graph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		385A15AB27C85FA5003536E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		385A15AD27C85FA5003536E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		385A15AF27C85FA5003536E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		385A15AF27C85FA5003536E3 /* RadarCircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadarCircleViewController.swift; sourceTree = "<group>"; };
 		385A15B227C85FA5003536E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		385A15B427C85FA8003536E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385A15B727C85FA8003536E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385A15B927C85FA8003536E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385A15C327C86054003536E3 /* BarEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarEntry.swift; sourceTree = "<group>"; };
+		385A15C727C860E3003536E3 /* CirclePieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePieView.swift; sourceTree = "<group>"; };
+		385A15C927C860FA003536E3 /* CirclePieIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CirclePieIndicatorView.xib; sourceTree = "<group>"; };
+		385A15CB27C86127003536E3 /* CirclePieIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePieIndicatorView.swift; sourceTree = "<group>"; };
+		385A15CE27C86202003536E3 /* HorizontalGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalGraph.swift; sourceTree = "<group>"; };
+		385A15CF27C86202003536E3 /* BasicBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicBarChart.swift; sourceTree = "<group>"; };
+		385A15D027C86202003536E3 /* LineChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		385A15D127C86202003536E3 /* PointChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PointChart.swift; sourceTree = "<group>"; };
+		385A15D927C86215003536E3 /* RadarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChart.swift; sourceTree = "<group>"; };
+		385A15DB27C8778C003536E3 /* LineAndPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineAndPointViewController.swift; sourceTree = "<group>"; };
+		385A15DD27C88404003536E3 /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,90 @@
 		385A15AA27C85FA5003536E3 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
-				385A15AB27C85FA5003536E3 /* AppDelegate.swift */,
-				385A15AD27C85FA5003536E3 /* SceneDelegate.swift */,
-				385A15AF27C85FA5003536E3 /* ViewController.swift */,
-				385A15B127C85FA5003536E3 /* Main.storyboard */,
-				385A15B427C85FA8003536E3 /* Assets.xcassets */,
-				385A15B627C85FA8003536E3 /* LaunchScreen.storyboard */,
+				385A15C227C86017003536E3 /* Controller */,
+				385A15C127C86010003536E3 /* Model */,
+				385A15C027C85FF5003536E3 /* View */,
+				385A15BF27C85FEA003536E3 /* Resource */,
 				385A15B927C85FA8003536E3 /* Info.plist */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		385A15BF27C85FEA003536E3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				385A15AB27C85FA5003536E3 /* AppDelegate.swift */,
+				385A15AD27C85FA5003536E3 /* SceneDelegate.swift */,
+				385A15B427C85FA8003536E3 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		385A15C027C85FF5003536E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				385A15C527C86073003536E3 /* GraphView */,
+				385A15B627C85FA8003536E3 /* LaunchScreen.storyboard */,
+				385A15B127C85FA5003536E3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		385A15C127C86010003536E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				385A15C327C86054003536E3 /* BarEntry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		385A15C227C86017003536E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				385A15AF27C85FA5003536E3 /* RadarCircleViewController.swift */,
+				385A15DB27C8778C003536E3 /* LineAndPointViewController.swift */,
+				385A15DD27C88404003536E3 /* BarViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		385A15C527C86073003536E3 /* GraphView */ = {
+			isa = PBXGroup;
+			children = (
+				385A15D827C86208003536E3 /* RadarChart */,
+				385A15CD27C861EF003536E3 /* BarChrts */,
+				385A15C627C86083003536E3 /* CircleChart */,
+			);
+			path = GraphView;
+			sourceTree = "<group>";
+		};
+		385A15C627C86083003536E3 /* CircleChart */ = {
+			isa = PBXGroup;
+			children = (
+				385A15C727C860E3003536E3 /* CirclePieView.swift */,
+				385A15CB27C86127003536E3 /* CirclePieIndicatorView.swift */,
+				385A15C927C860FA003536E3 /* CirclePieIndicatorView.xib */,
+			);
+			path = CircleChart;
+			sourceTree = "<group>";
+		};
+		385A15CD27C861EF003536E3 /* BarChrts */ = {
+			isa = PBXGroup;
+			children = (
+				385A15CF27C86202003536E3 /* BasicBarChart.swift */,
+				385A15CE27C86202003536E3 /* HorizontalGraph.swift */,
+				385A15D027C86202003536E3 /* LineChart.swift */,
+				385A15D127C86202003536E3 /* PointChart.swift */,
+			);
+			path = BarChrts;
+			sourceTree = "<group>";
+		};
+		385A15D827C86208003536E3 /* RadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				385A15D927C86215003536E3 /* RadarChart.swift */,
+			);
+			path = RadarChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +225,7 @@
 				385A15B827C85FA8003536E3 /* LaunchScreen.storyboard in Resources */,
 				385A15B527C85FA8003536E3 /* Assets.xcassets in Resources */,
 				385A15B327C85FA5003536E3 /* Main.storyboard in Resources */,
+				385A15CA27C860FA003536E3 /* CirclePieIndicatorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +236,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385A15B027C85FA5003536E3 /* ViewController.swift in Sources */,
+				385A15C427C86054003536E3 /* BarEntry.swift in Sources */,
+				385A15DC27C8778C003536E3 /* LineAndPointViewController.swift in Sources */,
+				385A15D627C86203003536E3 /* PointChart.swift in Sources */,
+				385A15CC27C86127003536E3 /* CirclePieIndicatorView.swift in Sources */,
+				385A15D527C86203003536E3 /* LineChart.swift in Sources */,
+				385A15DE27C88404003536E3 /* BarViewController.swift in Sources */,
+				385A15C827C860E3003536E3 /* CirclePieView.swift in Sources */,
+				385A15B027C85FA5003536E3 /* RadarCircleViewController.swift in Sources */,
 				385A15AC27C85FA5003536E3 /* AppDelegate.swift in Sources */,
 				385A15AE27C85FA5003536E3 /* SceneDelegate.swift in Sources */,
+				385A15D327C86203003536E3 /* HorizontalGraph.swift in Sources */,
+				385A15D427C86203003536E3 /* BasicBarChart.swift in Sources */,
+				385A15DA27C86215003536E3 /* RadarChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
